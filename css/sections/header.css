@@ -1,0 +1,80 @@
+.header__nav {
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo {
+    display: flex;
+    position: relative;
+    flex: 1;
+    padding: 20px
+}
+
+.header__logo-overlay {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+}
+
+
+.header__logo h4 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--playfair-display);
+    padding-left: 30px;
+    font-weight: 700;
+    opacity: 0.8;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.header__menu,
+.header__menu-mobile {
+    display: flex;
+    flex: 1.236;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    list-style: none;
+
+}
+
+.header__menu li {
+    text-transform: uppercase;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 600;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__menu li:not(:last-child):hover {
+    color: var(--primary-color);
+    transition: 100ms ease-in-out;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header__menu>li:last-child>img:hover {
+    opacity: 1;
+    transition: 50ms ease-in-out;
+}
+
+
+.header__menu li img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    object-fit: contain;
+}
+
+.header__menu-mobile {
+    display: none;
+    gap: 20px;
+    position: relative;
+}
